@@ -26,5 +26,5 @@ for service in $SERVICES; do
   fi
 done
 # shellcheck disable=SC2024
-sudo tee -a /etc/hosts >/dev/null <"${tmp}"
+tee -a /etc/hosts >/dev/null <"${tmp}"
 rm -f "${tmp}"
